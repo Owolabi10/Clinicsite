@@ -1,0 +1,99 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinic Card Number Generation</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2ecc71; /* Green background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  .card-number {
+    text-align: center;
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Generate Clinic Card Number</h1>
+  <div class="card-number" id="cardNumber">XXXX-XXXX-XXXX-XXXX</div>
+  <button onclick="generateCardNumber()">Generate New Number</button>
+</div>
+
+<script>
+  function generateCardNumber() {
+    var cardNumber = document.getElementById("cardNumber");
+    var randomNumber = Math.floor(1000 + Math.random() * 9000); // Generate random 4-digit number
+    cardNumber.textContent = "XXXX-XXXX-XXXX-" + randomNumber;
+  }
+</script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinic Card Number Generation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Generate Clinic Card Number</h1>
+    <div class="form-group">
+      <label for="registrationNumber">Enter Registration Number:</label>
+      <input type="text" id="registrationNumber" placeholder="Enter your registration number">
+    </div>
+    <div class="card-number" id="cardNumber">XXXX-XXXX-XXXX-XXXX</div>
+    <button onclick="generateCardNumber()">Generate New Number</button>
+  </div>
+
+  <script>
+    function generateCardNumber() {
+      var cardNumber = document.getElementById("cardNumber");
+      var randomNumber = Math.floor(1000 + Math.random() * 9000); // Generate random 4-digit number
+      cardNumber.textContent = "XXXX-XXXX-XXXX-" + randomNumber;
+    }
+  </script>
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>
+
